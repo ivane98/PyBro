@@ -153,4 +153,67 @@
 #         print(symbol, end='')
 #     print()
 
+###Loop Control Sequence
 
+# while True:
+#     name = input("Enter your name")
+#     if name != "":
+#         break
+
+# phone = '123-456-789'
+
+# for i in phone:
+#     if i == "-":
+#         continue
+#     print(i, end='')
+
+# for i in range(1, 21):
+#     if i == 13:
+#         pass
+#     print(i, end='')
+
+###LISTS
+
+# food = ['pizza', 'hamburger', 'hotdog', 'spaghetti']
+
+# food[0] = 'suchi'
+
+# food.append('pudding')
+# food.remove('hotdog')
+# food.pop()
+# food.insert(0, 'cake')
+# food.clear()
+# print(food)
+
+###2D LISTS
+
+# x = [1, 2, 3]
+# y = [4, 5, 6]
+# z = [7, 8, 9]
+
+
+# nums = [x, y, z]
+
+# print(nums[0][0])
+
+###TUPLE
+
+# student = ('Bro', 21, "male")
+
+# print(student.index('Bro'))
+# print(student.count('Bro'))
+
+# for i in student:
+#     print(i)
+
+# if "Bro" in student:
+#     print("Bro is here")
+
+###SETS
+
+# utensils = {"fork", "spoon", "knife", "knife"}
+
+# utensils.add('napkin')
+
+# for i in utensils:
+#     print(i)
