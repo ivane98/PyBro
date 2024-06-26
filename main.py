@@ -52,10 +52,105 @@
 
 ###User Input
 
-name = input("What is your name: ")
-age = int(input('How old are you: '))
-height = float(input("What is your height: "))
+# name = input("What is your name: ")
+# age = int(input('How old are you: '))
+# height = float(input("What is your height: "))
 
-print("Hello " + name)
-print("you are " + str(age) + " years old")
-print("your height is " + str(height) + " cm")
+# print("Hello " + name)
+# print("you are " + str(age) + " years old")
+# print("your height is " + str(height) + " cm")
+
+
+##Math Funcs
+
+# import math
+
+# pi = 3.14
+# x = 2
+
+# print(round(pi))
+# print(math.floor(pi))
+# print(math.ceil(pi))
+# print(abs(pi))
+# print(max(pi, x))
+# print(min(pi, x))
+# print(math.sqrt(pi))
+
+
+###String Slicing
+
+# name = "Bro Code"
+
+# print(name[0:4])
+# print(name[4:])
+# print(name[::-1])
+
+# website1 = "https://www.google.com"
+# website2 = "https://www.wikipedia.com"
+
+# slc = slice(12, -4)
+
+# print(website2[slc])
+
+##If, Else, Elif
+
+# age = int(input("How old are you: "))
+
+# if age == 100:
+#     print('you are century old')
+# elif age >= 18:
+#     print("you are an adult")
+# elif age < 0:
+#     print("you are not born")
+# else:
+#     print("you are a child")
+
+###Logical Operators
+
+# temp = int(input("Input Temp: "))
+
+# if not(temp >= 0 and temp <= 30):
+#     print("temp is good go outside")
+# elif not(temp < 0 or temp > 30):
+#     print("temp is bad dont go outside")
+
+###While Loop
+
+# name = None
+
+# while not name:
+#     name = input('Enter your name')
+
+# print("hello " + name)
+
+###For Loop
+
+# import time
+
+# # for i in range(10):
+# #     print(i + 1)
+
+# # for i in range(50, 100+1):
+# #     print(i)
+
+# # for i in "Bro Code":
+# #     print(i)
+
+# for seconds in range(10, 0, -1):
+#     print(seconds)
+#     time.sleep(1)
+
+# print("Happy new year")
+
+###Nested Loops
+
+# rows = int(input('Enter rows: '))
+# cols = int(input('Enter cols: '))
+# symbol = input('Enter symbol: ')
+
+# for i in range(rows):
+#     for i in range(cols):
+#         print(symbol, end='')
+#     print()
+
+
