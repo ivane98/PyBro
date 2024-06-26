@@ -212,8 +212,17 @@
 ###SETS
 
 # utensils = {"fork", "spoon", "knife", "knife"}
-
+# dishes = {'bowl', 'plate', 'cup', 'knife'}
 # utensils.add('napkin')
+# utensils.remove('fork')
+# utensils.clear()
 
-# for i in utensils:
+# dishes.update(utensils)
+
+# dinner_table = utensils.union(dishes)
+
+# for i in dishes:
 #     print(i)
+
+# print(dishes.difference(utensils))
+# print(utensils.intersection(dishes))
