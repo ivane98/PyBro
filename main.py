@@ -226,3 +226,206 @@
 
 # print(dishes.difference(utensils))
 # print(utensils.intersection(dishes))
+
+
+###DICTIONARIES
+
+# capitals = {
+#     'usa': 'washington',
+#     'russia': 'moscow',
+# }
+
+# capitals.update({'germany':'berlin'})
+# capitals.update({'usa': 'telavi'})
+# capitals.pop('russia')
+# capitals.clear()
+
+# for key, value in capitals.items():
+#     print(key, value)
+
+###INDEX OPERATOR
+
+# name = 'bro Code!'
+
+# # if name[0].islower():
+# #     name = name.capitalize()
+
+# print(name[-1])
+
+###FUNCTIONS
+
+# def hello(first_name, last_name, age):
+#     print("hello" + first_name + last_name + str(age))
+#     print('have a nice a day')
+
+# hello('Bro', 'Code', 21)
+
+###RETURN STATEMENT
+
+# def multiply(num1, num2):
+#     return num1 * num2
+
+# x = multiply(6, 8)
+
+# print(x)
+
+###KEYWORD ARGUMENTS
+
+# def hello(first, last):
+#     print(first, last)
+
+# hello(first='last', last='first')
+
+###NESTED FUNCTION CALLS
+
+# num = round(abs(float(input('enter a number: '))))
+
+# print(num)
+
+###SCOPE
+
+# name = 'Bro'
+
+# def display_name():
+#     # name = 'Code'
+#     print(name)
+
+# display_name()
+# print(name)
+
+###*ARGS
+
+# def add(*args):
+#     sum = 0
+#     stuff = list(args)
+#     stuff[0] = 0
+#     for i in stuff:
+#         sum += i
+
+#     return sum
+
+# print(add(1, 2, 3))
+
+
+###**KWARGS
+
+# def hello(**kwargs):
+#     for key, value in kwargs.items():
+#         print(key, value)
+
+# hello(first='Bro', middle='dude', last='Code')
+
+###STRING FORMAT
+
+# print("the {item} jumped over a {animal}".format(animal='cow', item='moon'))
+
+# print('Hello my name is {:^10}. Nice to meet you'.format('Bro'))
+
+# number = 1000
+
+# print('the number is {:e}'.format(number))
+
+###RANDOM
+
+# import random
+# cards = [1, 2, 3, 's']
+# random.shuffle(cards)
+
+# print(cards)
+
+###EXCEPTION HANDLING
+
+# try:
+#     num1 = int(input('enter the first num: '))
+#     num2 = int(input('enter the second num: '))
+#     res = num1 / num2
+# except ZeroDivisionError as e:
+#     print(e)
+#     print('cant devide by zero')
+# except ValueError as e:
+#     print(e)
+#     print('enter a num please')
+# except Exception as e:
+#     print('something went wrong')
+# else:
+#     print(res)
+# finally:
+#     print('finally')
+
+###FILE DETECTION
+
+# import os
+
+# path = r"C:\Users\TELAVI-PC\Desktop\f"
+
+# if os.path.exists(path):
+#     print('file exists')
+#     if os.path.isfile(path):
+#         print('it is a file')
+#     elif os.path.isdir(path):
+#         print('it is a folder')
+# else:
+#     print('file doesnt exist')
+
+
+###READ A FILE
+
+# try:
+#     with open('test.txt') as file:
+#         print(file.read())
+# except FileNotFoundError:
+#     print('file doent exist')
+
+###WRITE A FILE
+
+# text = 'hello  ee'
+
+# with open('test.txt', 'a') as file:
+#     file.write(text)
+
+###COPY A FILE
+
+# import shutil
+
+# shutil.copyfile('test.txt', 'copy.txt')
+
+###MOVE A FILE
+
+# import os 
+
+# os.replace('test.txt', r'\r')
+
+###DELETE A FILE
+
+# import os
+# import shutil
+# path = 'r'
+# shutil.rmtree(path)
+
+###MODULES
+
+# import msg as m
+
+# m.hello()
+# m.bye()
+
+# class Car:
+#     def __init__(self, make, model, year, color) -> None:
+#         self.make = make
+#         self.model = model
+#         self.year = year
+#         self.color = color
+    
+#     def drive(self):
+#         print('this car is driving')
+    
+#     def stop(self):
+#         print('this car is stopping')
+
+# car1 = Car('Chevy', 'corvette', 2021, 'blue')
+# car2 = Car('Chevy', 'corvette', 2022, 'red')
+
+# car1.drive()
+# car2.stop()
+
+
