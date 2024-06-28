@@ -409,7 +409,11 @@
 # m.hello()
 # m.bye()
 
+###OOP
+
 # class Car:
+
+#     wheels = 4
 #     def __init__(self, make, model, year, color) -> None:
 #         self.make = make
 #         self.model = model
@@ -425,7 +429,269 @@
 # car1 = Car('Chevy', 'corvette', 2021, 'blue')
 # car2 = Car('Chevy', 'corvette', 2022, 'red')
 
-# car1.drive()
-# car2.stop()
+# class Organism:
+#     alive = True
+
+# class Animal(Organism):
+#     def eat(self):
+#         print('eat')
+#         return self
+
+#     def sleep(self):
+#         print('sleep')
+#         return self
+
+# class Rabbit(Animal):
+#     def eat(self):
+#         print('rabbit eats')
+#         return self
+
+# class Prey:
+#     def run(self):
+#         print('run')
+
+# class Predator:
+#     def hunt(self):
+#         print('hunt')
+
+# class Fish(Prey, Predator):
+#     pass
+
+
+# class Rectangle:
+#     def __init__(self, length, width) -> None:
+#         self.length = length
+#         self.width = width
+
+# class Square(Rectangle):
+#     def __init__(self, length, width) -> None:
+#         super().__init__(length, width)
+
+#     def area(self):
+#         return self.length*self.width
+
+# class Cube(Rectangle):
+#     def __init__(self, length, width, height) -> None:
+#         super().__init__(length, width)
+#         self.height = height
+
+#     def volume(self):
+#         return self.length*self.width*self.height
+
+# from abc import ABC, abstractmethod
+
+# class Vehicle(ABC):
+#     @abstractmethod
+#     def go(self):
+#         pass
+
+#     @abstractmethod
+#     def stop(self):
+#         pass
+
+# class Car(Vehicle):
+#     def go(self):
+#         print('car')
+
+#     def stop(self):
+#         print('car stopped')
+
+# class Motorcycle(Vehicle):
+#     def go(self):
+#         print('motorcycle')
+
+#     def stop(self):
+#         print('motorcycle stopped')
+    
+
+# # vehicle = Vehicle()
+# # car = Car()
+# # motorcycle = Motorcycle()
+
+# # # vehicle.go()
+# # car.go()
+# # motorcycle.go()
+
+# class Carr:
+#     color = None
+
+# def change_color(car, color):
+#     car.color = color
+
+
+# class Duck:
+#     def talk(self):
+#         print('duck walk')
+#     def walk(self):
+#         print('duck walk')
+
+# class Chicken:
+#     def talk(self):
+#         print('chicken walk')
+#     def walk(self):
+#         print('chicken walk')
+
+# class Person:
+#     def catch(self, duck):
+#         duck.talk()
+#         duck.walk()
+#         print('catch')
+
+# duck = Duck()
+# chicken = Chicken()
+# person = Person()
+
+# person.catch(chicken)
+    
+###WALRUS OPERATOR
+
+# print(happy := True)
+
+# normal
+# foods = []
+# while True:
+#     food = input('what food do you like: ')
+
+#     if food == 'quit':
+#         break
+#     foods.append(food)
+
+#walrus
+# foods = []
+# while food := input('What foods do you like: ') != 'quit':
+#     foods.append(food)
+
+###FUNCTION TO VARIABLE
+
+# def hello():
+#     print('hello')
+
+# print(hello)
+# hi = hello
+# print(hi)
+
+# say = print
+# say('hi')
+
+###HIGHER ORDER FUNCTIONS
+
+# def loud(text):
+#     return text.upper()
+
+# def quite(text):
+#     return text.lower()
+
+# def hello(func):
+#     text = func('Hello')
+#     print(text)
+
+# def divisor(x):
+#     def dividend(y):
+#         return y/x
+#     return dividend
+
+###LAMBDA
+
+# mult = lambda x, y: x*y
+# age_check = lambda age: True if age > 18 else False
+# print(age_check(9))
+
+###SORT
+
+# students = [('spongebob', 'A', 99), ('squidward', 'F', 50), ('mr. krabs', 'C', 60)]
+
+# grade = lambda grades:grades[1]
+
+# # students.sort(key=grade, reverse=True)
+
+# sorted_students = sorted(students, key=grade)
+
+# for i in students: 
+#     print(i)
+
+###MAP
+
+# store = [1, 2, 3]
+
+
+# # print(map(store, lambda x: x + 1))
+
+# # Double all numbers using map and lambda
+
+# result = map(lambda x: x*0.8, store)
+# print(list(result))
+
+###filter
+
+# friends = [
+#     ('one', 21),
+#     ('two', 17)
+# ]
+
+# age = lambda age: (age[1] > 18)
+
+# drinking_buddies = list(filter(age, friends))
+
+# print(drinking_buddies)
+
+
+###reduce
+
+# from functools import reduce
+
+# letters = ['h', 'e', 'l', 'l', 'o']
+# word = reduce(lambda x, y: x + y, letters)
+
+# numbers = [1, 2, 3, 4, 5]
+
+# factorial = reduce(lambda x, y: x*y, numbers)
+
+# print(factorial)
+
+###list comprehension
+
+# nums = [1, 2, 3, 4]
+
+# filt = [i if i > 2 else 'F' for i in nums ]
+
+# print(filt)
+
+###dict comprehension
+
+# cities_in_f = {'a': 10, 'b': 12, 'c': 13}
+
+# only_sunny = {key: ('warm' if value > 10 else 'cold') for(key, value) in cities_in_f.items()}
+
+# print(only_sunny)
+
+###zip function
+
+# usernames = ['1', '2', '3']
+# passwords = ['a', 'b', 'c']
+
+# users = dict(zip(usernames, passwords))
+
+# print(users)
+
+###if _name_ == '__main__'
+
+# def hello():
+#     print('hello')
+
+
+# if __name__ == "__main__":
+#     hello()
+
+###time module
+
+# import time
+
+# # print(time.ctime(0))
+
+# print(time.localtime())
+
+
+ 
+
 
 

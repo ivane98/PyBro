@@ -1,6 +1,3 @@
-def hello():
-    print('hello')
+import main
 
-def bye():
-    print('bye')
-    
+main.hello()
