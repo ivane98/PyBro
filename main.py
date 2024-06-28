@@ -690,6 +690,119 @@
 
 # print(time.localtime())
 
+###threading
+
+# import threading
+# import time
+
+# def breakfast():
+#     time.sleep(3)
+#     print('breakfast')
+
+# def drink_coffee():
+#     time.sleep(4)
+#     print('coffee')
+
+# def study():
+#     time.sleep(5)
+#     print('study')
+
+# x = threading.Thread(target=breakfast)
+# x.start()
+# y = threading.Thread(target=drink_coffee)
+# y.start()
+# z = threading.Thread(target=study)
+# z.start()
+
+# x.join()
+# y.join()
+# z.join()
+
+
+
+
+# print(threading.active_count())
+# print(threading.enumerate())
+# print(time.perf_counter())
+
+###daemon threads
+
+# import threading
+# import time
+
+# def timer():
+#     print()
+#     count = 0
+
+#     while True:
+#         time.sleep(1)
+#         count += 1
+#         print('count is', count)
+
+# x = threading.Thread(target=timer, daemon=True)
+# x.start()
+
+###multiprocessing
+
+# from multiprocessing import Process, cpu_count
+# import time
+
+# def counter(num):
+#     count = 0
+
+#     while count < num:
+#         count += 1
+
+# def main():
+#     # start = time.perf_counter()
+#     # a = Process(target=counter, args=(250000000,))
+#     # b = Process(target=counter, args=(250000000,))
+#     # c = Process(target=counter, args=(250000000,))
+#     # d = Process(target=counter, args=(250000000,))
+#     # a.start()
+#     # b.start()
+#     # c.start()
+#     # d.start()
+#     # a.join()
+#     # b.join()
+#     # c.join()
+#     # d.join()
+
+#     # print('finished process in ', time.perf_counter() - start, ' seconds')
+
+#     print(cpu_count())
+
+
+# if __name__ == '__main__':
+#     main()
+
+###gui window
+
+# from tkinter import *
+
+# window = Tk()
+# window.geometry('500x500')
+# window.title('First GUI')
+# window.config(background='grey')
+
+# window.mainloop()
+
+###labels
+
+# from tkinter import *
+
+# window = Tk()
+
+# photo = PhotoImage(file='python.png')
+
+# label = Label(window, text='bro, do you even code?',
+#                font=('Arial', 40, 'bold'), fg='#00FF00', 
+#                bg='black', relief=RAISED,
+#                bd=10, padx = 20, pady = 20,
+#                image=photo, compound='bottom' )
+# label.pack()
+
+# window.mainloop()
 
  
 
