@@ -780,9 +780,9 @@
 
 # import smtplib
 
-# sender = 'vaniko.vardoshvili17@gmail.com'
-# receiver = 'i.vardoshvili22@gmail.com'
-# password = 'lukurti123'
+# sender = 
+# receiver = 
+# password = 
 # subject = 'python'
 # body = 'python body'
 
