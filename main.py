@@ -776,35 +776,30 @@
 # if __name__ == '__main__':
 #     main()
 
-###gui window
+###send an email
 
-# from tkinter import *
+# import smtplib
 
-# window = Tk()
-# window.geometry('500x500')
-# window.title('First GUI')
-# window.config(background='grey')
+# sender = 'vaniko.vardoshvili17@gmail.com'
+# receiver = 'i.vardoshvili22@gmail.com'
+# password = 'lukurti123'
+# subject = 'python'
+# body = 'python body'
 
-# window.mainloop()
 
-###labels
+# message = f''' from snoop dog{sender}
+# to receiver nicholas cage{receiver}
+# subject: {subject}\n
+# body: {body}
+# '''
 
-# from tkinter import *
+# server = smtplib.SMTP('smtp.gmail.com', 587)
+# server.starttls()
 
-# window = Tk()
-
-# photo = PhotoImage(file='python.png')
-
-# label = Label(window, text='bro, do you even code?',
-#                font=('Arial', 40, 'bold'), fg='#00FF00', 
-#                bg='black', relief=RAISED,
-#                bd=10, padx = 20, pady = 20,
-#                image=photo, compound='bottom' )
-# label.pack()
-
-# window.mainloop()
-
- 
+# server.login(server, password)
+# print('logged in...')
+# server.sendmail(sender, receiver, message)
+# print('email has been sent')
 
 
 
